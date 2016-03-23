@@ -8,16 +8,16 @@ before_script:
  # - mkdir -p shippable/codecoverage
 
 after_success:
-  - echo $TOTO
+  #- echo $TOTO
   - git remote -v
   - git config --global user.email "reemjabbar1@yahoo.com"
   - git config --global user.name "Reem"
   - git checkout master
   - npm version patch
-   - git commit -am "[skip ci] bump version"
+  # - git commit -am "[skip ci] bump version"
   - git log --oneline
-   - git remote set-url origin https://github.com/Reem2016/Travis.git
-   - git push origin master
+  - git remote set-url origin https://github.com/Reem2016/Travis.git
+  - git push origin master
 #  - npm run coverage
 #  - mv coverage/cobertura-coverage.xml shippable/codecoverage/coverage.xml
 #  - mocha test -R mocha-lcov-reporter  && 
