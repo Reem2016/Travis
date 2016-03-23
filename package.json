@@ -1,12 +1,12 @@
 {
-  "name": "node-travis",
-  "version": "0.1.0",
+  "name": "learn-travis-YOURNAME",
+  "description": "Simple Travis-CI check for JSHint (Code Linting)",
+  "author": "Reem J. Abdulbaqi :-)",
+  "version": "0.0.1",
   "devDependencies": {
-    "grunt": "0.4.1",
-    "grunt-cli": "0.1.9",
-    "grunt-contrib-jshint": "0.6.0"
+    "jshint": "^2.6.0"
   },
   "scripts": {
-    "test": "grunt --verbose"
+    "test": "./node_modules/jshint/bin/jshint hello.js"
   }
 }
